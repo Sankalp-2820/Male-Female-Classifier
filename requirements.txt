@@ -1,0 +1,11 @@
+Flask
+scikit-learn
+pandas
+numpy
+matplotlib
+gunicorn
+tensorflow
+keras
+opencv-python
+scikit-learn
+pickle

@@ -6,13 +6,18 @@
     <title>Gender Classification</title>
 </head>
 <body>
-    <h1>Gender Classification</h1>
+    <h1>Gender Classification (Male - Female)</h1>
     <form method="POST" enctype="multipart/form-data">
         <input type="file" name="file" accept="image/*" required>
         <button type="submit">Upload and Predict</button>
     </form>
     {% if gender %}
     <p>Predicted Gender: {{ gender }}</p>
+    <br>
+    <p> Prediction score: {{final*100}} </p>
+    <br>
+    <p> Score closer to 100 indicates Male, while a score closer to zero indicates female. </p>
+    <br>
     <img src="{{ image_path }}" alt="Uploaded Image">
     {% endif %}
 </body>
